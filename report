@@ -1,0 +1,49 @@
+
+
+Delivery has failed to these recipients or groups:
+
+scouts@scouts.mindvision.com.au (scouts@scouts.mindvision.com.au)
+Your message wasn't delivered. Despite repeated attempts to deliver your message, the recipient's email system refused to accept a connection from your email system.
+
+Contact the recipient by some other means (by phone, for example) and ask them to tell their email admin that it appears that their email system is refusing connections from your email server. Give them the error details shown below. It's likely that the recipient's email admin is the only one who can fix this problem.
+
+For Email Admins
+No connection could be made because the target computer actively refused it. This usually results from trying to connect to a service that is inactive on the remote host - that is, one with no server application running. For more information and tips to fix this issue see this article: https://go.microsoft.com/fwlink/?LinkId=389361
+
+
+
+
+
+
+
+
+Diagnostic information for administrators:
+
+Generating server: SG2APC01HT018.mail.protection.outlook.com
+Receiving server: SG2APC01HT018.eop-APC01.prod.protection.outlook.com
+
+scouts@scouts.mindvision.com.au
+1/9/2019 9:43:14 AM - Server at SG2APC01HT018.eop-APC01.prod.protection.outlook.com returned '550 5.4.316 Message expired, connection refused(Socket error code 10061)'
+1/9/2019 9:32:56 AM - Server at scouts.mindvision.com.au (52.62.197.189) returned '450 4.4.316 Connection refused [Message=Socket error code 10061] [LastAttemptedServerName=scouts.mindvision.com.au] [LastAttemptedIP=52.62.197.189:25] [SG2APC01FT037.eop-APC01.prod.protection.outlook.com](Socket error code 10061)'
+
+Original message headers:
+
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=outlook.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=2Fzi2fzye+jozyC2sQchtKA4qlM7N/D60ul39YGGFoM=;
+ b=HTX965Y0x6dFg5SCg/GJdJGIpINeSph62WX3amvEXkMpr9KUnaDgyEQnIWDG+RWmV2rL8oeXB1qnp2YbKD9w5zTWZaROcBfhDBFlU0JmAr7U6HznbVeztiDI136R5JdaACFjJfhEfveJRJmNv5zh2xzFbmF9+mTJ5mwpZgebudzJjio5On0/29ch+5OJ/sVPJUJGrl7oPTejY2t2uyYQ7y5h/Q5wg72m4dzQ3ctEt97RdnRM8ypVd+xlkFmPnmko4Zr8/EnQECdnR2SfRgnuccuijuusPj7812EO77Yol/930PYfyEp8adVJfwyBtheiUzAH78dho5XCQtMS5lIr1g==
+Received: from SG2APC01FT013.eop-APC01.prod.protection.outlook.com
+ (10.152.250.57) by SG2APC01HT018.eop-APC01.prod.protection.outlook.com
+ (10.152.250.247) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.1471.13; Mon, 7 Jan
+ 2019 09:37:44 +0000
+Received: from SG2PR02MB3130.apcprd02.prod.outlook.com (10.152.250.52) by
+ SG2APC01FT013.mail.protection.outlook.com (10.152.250.186) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.1471.13 via Frontend Transport; Mon, 7 Jan 2019 09:37:44 +0000
+Received: from SG2PR02MB3130.apcprd02.prod.outlook.com
+ ([fe80::9424:4bd6:8ade:d4b9]) by SG2PR02MB3130.apcprd02.prod.outlook.com
+ ([fe80::9424:4bd6:8ade:d4b9%3]) with mapi id 15.20.1495.011; Mon, 7 Jan 2019
+ 09:37:44 +0000
+
